@@ -7,14 +7,17 @@ using UnityEngine.SceneManagement;
 public class LifeCounter : MonoBehaviour
 {
     [SerializeField] public static int _life = 5;
-    [SerializeField] private TextMeshProUGUI _livesDisplayer;
+    private SpriteRenderer _livesDisplayer;
+    [SerializeField] private Sprite[] sprites;
+
     public static LifeCounter Instance;
     // Start is called before the first frame update
     void Awake()
     {
         Instance = this;
+        _livesDisplayer = GetComponent<SpriteRenderer>();
         DontDestroyOnLoad(gameObject);
-        _livesDisplayer.SetText(_life.ToString());
+        _livesDisplayer.sprite = sprites[_life];
     }
 
     public void DecrementLife()
@@ -25,7 +28,7 @@ public class LifeCounter : MonoBehaviour
 
     private void Update()
     {
-        _livesDisplayer.SetText(_life.ToString());
+        _livesDisplayer.sprite = sprites[_life];
         Debug.Log(_life);
     }
 

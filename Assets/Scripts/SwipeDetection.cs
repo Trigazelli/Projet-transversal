@@ -18,7 +18,7 @@ public class SwipeDetection : MonoBehaviour
     private float y1;
     private float y2;
     private float startTime;
-    private int Swipe = 0;
+    [HideInInspector] public int Swipe = 0;
 
     private void OnMouseEnter()
     {
