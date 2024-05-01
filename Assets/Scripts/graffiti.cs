@@ -6,6 +6,7 @@ public class Graffiti : MonoBehaviour
 {
     [SerializeField] private SwipeCalcul _calcul;
     [SerializeField] private float _maxTime;
+    [HideInInspector] public bool finished = false;
 
     private SpriteRenderer _spriteRenderer;
     private float _x1;
@@ -59,7 +60,7 @@ public class Graffiti : MonoBehaviour
 
         if (_swipe >= 5)
         {
-            LevelLoader.Instance.LoadNextLevel();
+            finished = true;
         }
     }
 

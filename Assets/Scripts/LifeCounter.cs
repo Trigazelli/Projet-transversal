@@ -26,6 +26,7 @@ public class LifeCounter : MonoBehaviour
     private void Update()
     {
         _livesDisplayer.SetText(_life.ToString());
+        Debug.Log(_life);
     }
 
     private void CheckIfGameLost()

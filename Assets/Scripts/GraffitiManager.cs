@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneChanger : MonoBehaviour
+public class GraffitiManager : MonoBehaviour
 {
-    [SerializeField] private SwipeDetection[] _thingsToSwipe;
+    [SerializeField] private Graffiti[] _thingsToSwipe;
 
     private void Update()
     {
@@ -17,7 +17,7 @@ public class SceneChanger : MonoBehaviour
     private bool _allFinished()
     {
         int counter = 0;
-        foreach (SwipeDetection thing in _thingsToSwipe)
+        foreach (Graffiti thing in _thingsToSwipe)
         {
             Debug.Log(thing.finished);
             if (thing.finished)

@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneChanger : MonoBehaviour
+public class FireRevenge : MonoBehaviour
 {
     [SerializeField] private SwipeDetection[] _thingsToSwipe;
+
+    int counter = 0;
 
     private void Update()
     {
@@ -16,7 +18,6 @@ public class SceneChanger : MonoBehaviour
 
     private bool _allFinished()
     {
-        int counter = 0;
         foreach (SwipeDetection thing in _thingsToSwipe)
         {
             Debug.Log(thing.finished);
