@@ -7,6 +7,11 @@ public class FollowMouse : MonoBehaviour
     [SerializeField] private float offsetX;
     [SerializeField] private float offsetY;
 
+/*    private void Start()
+    {
+        Cursor.visible = false;
+    }*/
+
     private void Update()
     {
         // Debug.Log(transform.position);
