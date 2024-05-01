@@ -56,6 +56,11 @@ public class graffiti : MonoBehaviour
             }
         }
         _startTime = 0f;
+
+        if (_swipe >= 5)
+        {
+            LevelLoader.Instance.LoadNextLevel("HubMenu");
+        }
     }
 
     private void ChangeAlpha()
