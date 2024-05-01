@@ -22,26 +22,18 @@ public class LevelLoader : MonoBehaviour
             _instance = this;
         }
     }
-    // Update is called once per frame
-    void Update()
+
+    public void LoadNextLevel()
     {
-/*        if (Input.GetMouseButtonDown(0))
-        {
-            LoadNextLevel();
-        }*/
+        StartCoroutine(LoadLevel());
     }
 
-    public void LoadNextLevel(string scene)
-    {
-        StartCoroutine(LoadLevel(scene));
-    }
-
-    IEnumerator LoadLevel(string LevelName)
+    IEnumerator LoadLevel()
     {
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(TransitionTime);
 
-        SceneManager.LoadScene(LevelName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

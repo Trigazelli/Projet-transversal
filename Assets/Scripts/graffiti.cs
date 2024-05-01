@@ -59,7 +59,7 @@ public class graffiti : MonoBehaviour
 
         if (_swipe >= 5)
         {
-            LevelLoader.Instance.LoadNextLevel("HubMenu");
+            LevelLoader.Instance.LoadNextLevel();
         }
     }
 

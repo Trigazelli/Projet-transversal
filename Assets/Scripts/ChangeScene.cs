@@ -11,6 +11,6 @@ public class ChangeScene : MonoBehaviour
 
     private void OnMouseDown()
     {
-        LevelLoader.Instance.LoadNextLevel(scene);
+        LevelLoader.Instance.LoadNextLevel();
     }
 }

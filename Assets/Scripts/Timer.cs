@@ -1,19 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private float time;
+    [SerializeField] private float duration;
+    [SerializeField] private Sprite[] sprites;
+
+    private SpriteRenderer _sprite;
+
+    private bool _lowerLife = true;
+    private float _time;
 
     private void Start()
     {
-        StartCoroutine(timer());
+        _time = duration;
+        _sprite = GetComponent<SpriteRenderer>();
     }
-    public IEnumerator timer()
+
+    private void Update()
     {
-        yield return new WaitForSeconds(time);
-        Debug.Log("Perdu loul");
-        LevelLoader.Instance.LoadNextLevel("HubMenu");
+        _decrementTime();
+        _checkIfLifeLost();
+        _displaytime();
+    }
+
+    private void _decrementTime()
+    {
+        _time -= Time.deltaTime;
+    }
+
+    private void _displaytime()
+    {
+        _sprite.sprite = sprites[Mathf.Max(0, Mathf.FloorToInt(_time))];
+    }
+
+    private void _checkIfLifeLost()
+    {
+        if (_time < 0f)
+        {
+            if (_lowerLife)
+            {
+                LifeCounter.Instance.DecrementLife();
+                _lowerLife = false;
+            }
+            LevelLoader.Instance.LoadNextLevel();
+        }
     }
 }

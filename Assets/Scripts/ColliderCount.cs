@@ -31,7 +31,7 @@ public class ColliderCount : MonoBehaviour
         Debug.Log("compteur :" + compteur);
         if (compteur >= 3)
         {
-            LevelLoader.Instance.LoadNextLevel("HubMenu");
+            LevelLoader.Instance.LoadNextLevel();
         }
     }
 }

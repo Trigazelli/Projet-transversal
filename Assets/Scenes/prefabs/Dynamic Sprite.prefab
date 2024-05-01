@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 67868993811192393}
   - component: {fileID: 2457331111024224702}
   - component: {fileID: 8842496549911745939}
-  - component: {fileID: 4942994333324012864}
   - component: {fileID: 8696240674484991386}
   m_Layer: 0
   m_Name: Dynamic Sprite
@@ -145,22 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3170e16fbee107d44a5fb841fe58c8e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finished: 0
   maxTime: 1
   swipeWanted: down
   anim: {fileID: 8696240674484991386}
---- !u!114 &4942994333324012864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8117817720082988861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ded63c6a7d0a1b34aa509de0e8cd423b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene: HubMenu
 --- !u!95 &8696240674484991386
 Animator:
   serializedVersion: 5

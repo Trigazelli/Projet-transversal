@@ -10,7 +10,7 @@ public class SceneChanger : MonoBehaviour
     {
         if (_allFinished())
         {
-            LevelLoader.Instance.LoadNextLevel("HubMenu");
+            LevelLoader.Instance.LoadNextLevel();
         }
     }
 
