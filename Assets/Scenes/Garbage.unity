@@ -200,8 +200,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.101490974, y: 3.627807}
-      - {x: -2.0277839, y: 2.1797533}
+    - - {x: -0.39868736, y: 3.865564}
+      - {x: -2.4042315, y: 2.6948938}
       - {x: -0.9993963, y: 0.24647844}
       - {x: -0.07991588, y: 0.24453759}
   m_UseDelaunayMesh: 0
@@ -813,7 +813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7315750738143287983, guid: 7233db0bbc2267644a9e2fda620bf0fe, type: 3}
       propertyPath: duration
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1142,7 +1142,7 @@ Transform:
   m_GameObject: {fileID: 1428430137}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.48572412, w: 0.8741122}
-  m_LocalPosition: {x: 4.99, y: -0.32, z: 0.006921326}
+  m_LocalPosition: {x: 4.84, y: -0.49, z: 0.006921326}
   m_LocalScale: {x: 3.8671997, y: 0.4342237, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
