@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColliderCount : MonoBehaviour
 {
     [SerializeField] private List<string> strings;
+    [SerializeField] private int chiffre;
 
 
     private int compteur;
@@ -29,7 +30,7 @@ public class ColliderCount : MonoBehaviour
     private void Update()
     {
         Debug.Log("compteur :" + compteur);
-        if (compteur >= 3)
+        if (compteur >= chiffre)
         {
             LevelLoader.Instance.LoadNextLevel();
         }
