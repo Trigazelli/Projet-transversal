@@ -44,8 +44,8 @@ public class Timer : MonoBehaviour
             {
                 LifeCounter.Instance.DecrementLife();
                 _lowerLife = false;
+
             }
-            _time = duration;
         }
     }
 }

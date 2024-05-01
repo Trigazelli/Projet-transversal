@@ -337,7 +337,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -574,15 +574,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 12403146918597405, guid: 7233db0bbc2267644a9e2fda620bf0fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.229554
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 12403146918597405, guid: 7233db0bbc2267644a9e2fda620bf0fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0848794
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 12403146918597405, guid: 7233db0bbc2267644a9e2fda620bf0fe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.9447775
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 12403146918597405, guid: 7233db0bbc2267644a9e2fda620bf0fe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -618,11 +618,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3056855564645349598, guid: 7233db0bbc2267644a9e2fda620bf0fe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7315750738143287983, guid: 7233db0bbc2267644a9e2fda620bf0fe, type: 3}
       propertyPath: time
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315750738143287983, guid: 7233db0bbc2267644a9e2fda620bf0fe, type: 3}
+      propertyPath: duration
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1312,7 +1316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4125049755324873363, guid: d607630b20d639248a5abe6e6ad2c143, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

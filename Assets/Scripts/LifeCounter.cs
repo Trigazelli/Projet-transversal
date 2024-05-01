@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LifeCounter : MonoBehaviour
 {
-    [SerializeField] public int _life;
+    [SerializeField] public static int _life = 5;
     [SerializeField] private TextMeshProUGUI _livesDisplayer;
     public static LifeCounter Instance;
     // Start is called before the first frame update
