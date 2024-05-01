@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe67a1d82cd9dd840a97c3fc0e37377d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 0
+  duration: 10
   sprites:
   - {fileID: 21300000, guid: e018a0497ca9d164ebf00957ea25164a, type: 3}
   - {fileID: 21300000, guid: 5294ff4a37f221348b3058b657d5992d, type: 3}
@@ -110,3 +110,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6ebe76463bbe4164eaddc2bf6209074c, type: 3}
   - {fileID: 21300000, guid: e59c596c03b5ffe42b57da7f69f93a93, type: 3}
   - {fileID: 21300000, guid: 603ab265878169941975a3d4d2fd1a79, type: 3}
+  textMeshPro: {fileID: 0}
+  canvas: {fileID: 0}
+  phrase: Swipe Down the Fire !
