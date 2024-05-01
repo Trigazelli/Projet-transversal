@@ -45,7 +45,6 @@ public class Timer : MonoBehaviour
                 LifeCounter.Instance.DecrementLife();
                 _lowerLife = false;
             }
-            LevelLoader.Instance.LoadNextLevel();
         }
     }
 }

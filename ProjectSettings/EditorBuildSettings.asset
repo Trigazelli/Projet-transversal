@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 5dbdbe72ead309c4bb933d32cba369e4
+  - enabled: 1
+    path: Assets/Scenes/Fire.unity
+    guid: 52ceabbcd801d6a42b6b83dc8b5cb802
   - enabled: 0
     path: Assets/Scenes/HubMenu.unity
     guid: a5185322ca81a5e4f9a19df9df3f7e7f
@@ -24,12 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Graffiti.unity
     guid: 8c0e41c069d3697418adb5d920bec98f
   - enabled: 1
-    path: Assets/Scenes/Fire.unity
-    guid: 52ceabbcd801d6a42b6b83dc8b5cb802
-  - enabled: 1
     path: Assets/Scenes/Fire2.unity
     guid: d269da6a6a3c95345a554645d15e650b
   - enabled: 1
     path: Assets/Scenes/Fire3.unity
     guid: 64b76911a8551274a8fbef1a866824f7
+  - enabled: 1
+    path: Assets/Scenes/Defeat.unity
+    guid: 805ecf90ad7ac3c439be407934812506
   m_configObjects: {}

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class graffiti : MonoBehaviour
+public class Graffiti : MonoBehaviour
 {
     [SerializeField] private SwipeCalcul _calcul;
     [SerializeField] private float _maxTime;
