@@ -7,6 +7,9 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private float duration;
     [SerializeField] private Sprite[] sprites;
+    [SerializeField] private TextMeshProUGUI textMeshPro;
+    [SerializeField] private Canvas canvas;
+    [SerializeField] private string phrase;
 
     private SpriteRenderer _sprite;
 
@@ -15,6 +18,7 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(Indication());
         _time = duration;
         _sprite = GetComponent<SpriteRenderer>();
     }
@@ -47,5 +51,12 @@ public class Timer : MonoBehaviour
 
             }
         }
+    }
+
+    private IEnumerator Indication()
+    {
+        textMeshPro.SetText(phrase);
+        yield return new WaitForSeconds(1);
+        canvas.enabled = false;
     }
 }

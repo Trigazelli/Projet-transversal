@@ -225,8 +225,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1322901392}
   - component: {fileID: 1322901391}
+  - component: {fileID: 1322901393}
   m_Layer: 0
-  m_Name: Defeat
+  m_Name: Victory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,7 +274,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 41ce7922191b8624fabb32f6dcd61d94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86db773664a2f0441a0d82771c2fe235, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -299,6 +300,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1322901393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322901390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1944323f22410f54fb22e7eb64bbc36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseScale: 15
+  speed: 4
 --- !u!1 &1634214776
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +372,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d6385bfea49473429c4f8fda4674d3c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f64295f36dc9244e9f1da57350a24e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

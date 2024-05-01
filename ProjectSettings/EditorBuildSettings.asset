@@ -45,6 +45,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Graffiti3.unity
     guid: 5fc1e8bcb97ab7940bcd194a5fd69709
   - enabled: 1
+    path: Assets/Scenes/Graffitirevenge.unity
+    guid: 2c395de58bd0f91429862cb8838fd3cd
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 3340c54053680694e8598b57d3c68213
+  - enabled: 1
     path: Assets/Scenes/Defeat.unity
     guid: 805ecf90ad7ac3c439be407934812506
   m_configObjects: {}

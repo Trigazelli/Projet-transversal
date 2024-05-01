@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] bool Play;
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        LevelLoader.Instance.LoadNextLevel();
     }
 
     private void OnMouseDown()
